@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let balance = 110;
+
+    document.write('START', '<br>');
+
+    const product1Price = window.prompt("How much does product cost?");
+
+    if (balance < product1Price) {
+        document.write('Not enough money','<br>');
+    } else {
+        document.write('Product purchased','<br>');
+        balance = balance - product1Price;
+    }
+
+    const product2Price = window.prompt("How much does product cost?");
+
+    if (balance < product2Price) {
+        document.write('Not enough money','<br>');
+    } else {
+        document.write('Product purchased','<br>');
+        balance = balance - product2Price;
+    }
+
+    const product3Price = window.prompt("How much does product cost?");
+
+    if (balance < product3Price) {
+        document.write('Not enough money');
+    } else {
+        document.write('Product purchased');
+        balance = balance - product3Price;
+    }
+
+    document.write('<br>', 'your balance:' + balance)
+    document.write('<br>', 'END')
+</script>
+</body>
+</html>
