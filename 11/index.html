@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let userBalance;
+    let productCost;
+    let difference;
+    let balanceCostRatio;
+    let balanceCostPercentage;
+
+    userBalance = 100;
+    productCost = 20;
+    difference = userBalance - productCost;
+    console.log(difference);
+    console.log(difference > 0);
+
+    userBalance = 20;
+    productCost = 30;
+    difference = userBalance - productCost;
+    console.log(difference >= 0);
+
+    userBalance = 10;
+    productCost = 1;
+    balanceCostRatio = productCost / userBalance;
+    balanceCostPercentage = balanceCostRatio*100;
+    console.log(balanceCostRatio);
+    console.log(balanceCostPercentage);
+
+</script>
+</body>
+</html>
