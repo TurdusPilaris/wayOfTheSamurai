@@ -11,31 +11,45 @@
 
     document.write('START', '<br>');
 
-    const product1Price = window.prompt("How much does product cost?");
+    const product1PriceString = window.prompt("How much does product cost?");
+    const product1Price = Number(product1PriceString);
 
-    if (balance < product1Price) {
-        document.write('Not enough money','<br>');
+    if (isNaN(product1Price)) {
+        document.write("You input incorrect number", '<br>');
     } else {
-        document.write('Product purchased','<br>');
-        balance = balance - product1Price;
+        if (balance < product1Price) {
+            document.write('Not enough money', '<br>');
+        } else {
+            document.write('Product purchased', '<br>');
+            balance = balance - product1Price;
+        }
     }
 
-    const product2Price = window.prompt("How much does product cost?");
+    const product2PriceString = window.prompt("How much does product cost?", '<br>');
+    const product2Price = Number(product2PriceString);
 
-    if (balance < product2Price) {
-        document.write('Not enough money','<br>');
+    if (isNaN(product2Price)) {
+        document.write("You input incorrect number");
     } else {
-        document.write('Product purchased','<br>');
-        balance = balance - product2Price;
+        if (balance < product2Price) {
+            document.write('Not enough money', '<br>');
+        } else {
+            document.write('Product purchased', '<br>');
+            balance = balance - product2Price;
+        }
     }
+    const product3PriceString = window.prompt("How much does product cost?", '<br>');
+    const product3Price = Number(product3PriceString);
 
-    const product3Price = window.prompt("How much does product cost?");
-
-    if (balance < product3Price) {
-        document.write('Not enough money');
+    if (isNaN(product2Price)) {
+        document.write("You input incorrect number");
     } else {
-        document.write('Product purchased');
-        balance = balance - product3Price;
+        if (balance < product3Price) {
+            document.write('Not enough money');
+        } else {
+            document.write('Product purchased');
+            balance = balance - product3Price;
+        }
     }
 
     document.write('<br>', 'your balance:' + balance)
