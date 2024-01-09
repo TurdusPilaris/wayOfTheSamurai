@@ -48,11 +48,14 @@
 
     alert(notificationMessages.start.hello);
 
+     let wrongArrays = [];
      for(let i = 0; i < words.length; i++){
         let userAnswer = prompt(words[i].original);
         document.write(userAnswer === words[i].translation, "<br>");
          if(userAnswer === words[i].translation) {
              result.correctAnswerCount = result.correctAnswerCount + 1;
+         } else {
+             wrongArrays.push(userAnswer);
          }
      }
 
@@ -65,7 +68,13 @@
     } else {
         // alert(finishUnSuccessMessage);
         alert(notificationMessages.result.finishUnSuccess, "<br>");
+        document.write('--------------------------------------', "<br>");
+        for (i=0; i<wrongArrays.length;i++){
+            document.write(i+1, ' - ', wrongArrays[i], "<br>");
+        }
     }
+
+
 
 </script>
 </body>
