@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // const repeatCount = 3;
+
+    // for (let index = 1; index <= repeatCount; index++) {
+    //     document.write('a');
+    // }
+
+    let grades = [4,5,3];
+
+    for(let i = 0; i < grades.length; i++) {
+        document.write(grades[i], '<br>');
+    }
+
+    let books = [
+        "Война и мир",
+        "Мастер и Маргарита",
+        "Преступление и наказание"
+    ]
+
+    for (let i=0; i < books.length; i++) {
+        document.write(books[i], "<br>");
+    }
+
+    let persons = [
+        {
+            name: 'Lena',
+            age: 34
+        },
+        {
+            name: 'Vova',
+            age: 46
+        }
+    ];
+    for (let i = 0; i < persons.length; i++){
+        document.write(persons[i].name + " " + persons[i].age, "<br>");
+    }
+
+    let shoppingLists = [
+        ["Молоко", "яйца", "хлеб"],
+        ["сок", "мороженое"],
+        ["корм для кота", "шампунь"]
+    ]
+
+    for (let i=0; i<shoppingLists.length; i++){
+        for(let j = 0; j < shoppingLists[i].length; j++){
+            document.write(shoppingLists[i][j], "<br>");
+        }
+    }
+</script>
+</body>
+</html>
